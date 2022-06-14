@@ -1,18 +1,18 @@
-// __tests__/About.test.js
+// __tests__/Gallery.test.js
 import React from 'react';
 import { render, cleanup } from '@testing-library/react';
 import '@testing-library/jest-dom/extend-expect';
-import About from '..';
+import Gallery from '..';
 
 afterEach(cleanup);
 
-describe('About component', () => {
+describe('Gallery component', () => {
   it('renders', () => {
-    render(<About />);
+    render(<Gallery />);
   });
   
   it('matches snapshot DOM node structure', () => {
-    const { asFragment } = render(<About />);
+    const { asFragment } = render(<Gallery />);
     
     expect(asFragment()).toMatchSnapshot();
   });
